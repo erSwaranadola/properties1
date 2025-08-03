@@ -27,6 +27,8 @@ const Login=()=>{
             require={true} 
             labelrequire={true}
             labelcolor={'white'}
+            margin={'mt-2'}
+            width={250}
             /> 
         
         <PrimaryInput 
@@ -36,6 +38,8 @@ const Login=()=>{
         require={true} 
         labelrequire={true}
          labelcolor={'white'}
+         margin={'mt-2'}
+         width={250}
         /> 
         
         <PrimaryInput 
@@ -45,6 +49,8 @@ const Login=()=>{
          require={true} 
          labelrequire={true}
           labelcolor={'white'}
+          margin={'mt-2'}
+          width={250}
          /> 
          <Primarybutton title={"Log in"} Width={180} margin={'mt-2'}
          

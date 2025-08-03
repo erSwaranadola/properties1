@@ -1,10 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 
 
-const PrimaryInput = ({ Title,inputtype,placeholder,require,labelrequire,labelcolor }) => {
+const PrimaryInput = ({ Title,inputtype,placeholder,require,labelrequire,labelcolor,margin,width }) => {
   return (
     <>
-    <Row>
+    <Row className={margin}>
       <Col>
       {labelrequire?
       <div>
@@ -20,7 +20,7 @@ const PrimaryInput = ({ Title,inputtype,placeholder,require,labelrequire,labelco
     <Row>
       <Col>
       <div>
-        <input type={inputtype} placeholder={placeholder}/>
+        <input style={{width:width}}type={inputtype} placeholder={placeholder}/>
         </div>
       </Col>
       </Row>
