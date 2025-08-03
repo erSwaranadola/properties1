@@ -1,14 +1,14 @@
 import { Col, Row } from "react-bootstrap";
 
 
-const PrimaryInput = ({ Title,inputtype,placeholder,require,labelrequire }) => {
+const PrimaryInput = ({ Title,inputtype,placeholder,require,labelrequire,labelcolor }) => {
   return (
     <>
     <Row>
       <Col>
       {labelrequire?
       <div>
-        <label>
+        <label style={{color:labelcolor}}>
           {Title}
           <label style={{color:'red'}}>{require?"*":""}</label>
         </label>

@@ -1,30 +1,31 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Login from "../screen/admin"
-import Admin from "../screen/admin/Admin"
-import Signup from "../screen/admin/Signup"
-import Addpost from "../screen/admin/Addpost"
-import Preview from "../screen/admin/Preview"
-import Update from "../screen/admin/Update"
-import Profile from "../screen/admin/Profile"
+import { Route, Routes } from "react-router-dom"
+import Login from "./Login"
+import {  Container } from "react-bootstrap"
+import { useEffect, useState } from "react"
+import Notlogin from "./NotLogin"
 
 const Routenav=()=>{
+
+    const [data,SetData] = useState("")
+
+    // useEffect(()=>{
+    //     SetData("gggg")
+
+    // },[])
+
+    
     return(
         <>
-        
-        <BrowserRouter>
-        <h1>Header</h1>
+         
+    <Container fluid style={{margin:0,padding:0}}>
         <Routes>
-            <Route path={'/'} Component={Login}/>
-            <Route path={'/admin'} Component={Admin}/>
-            <Route path={'/signup'} Component={Signup}/>
-            <Route path={'/addpost'} Component={Addpost}/>
-            <Route path={'/preview'} Component={Preview}/>
-            <Route path={'/update'} Component={Update}/>
-            <Route path={'/profile'} Component={Profile}/>
-            
+            <Route path="/"  Component={Notlogin}/>
+
         </Routes>
-        <h1>Footer</h1>
-        </BrowserRouter>
+    </Container>
+       
+       
+        
         </>
     )
 

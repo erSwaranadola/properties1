@@ -1,8 +1,11 @@
+import { BrowserRouter } from "react-router-dom"
 import Routenav from "./route"
 
 const App=()=>{
     return(
-        <Routenav/>
+        <BrowserRouter>
+            <Routenav/>
+        </BrowserRouter>
     )
 
 }
